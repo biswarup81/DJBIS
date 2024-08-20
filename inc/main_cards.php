@@ -2,13 +2,14 @@
 Cards START -->
 <section class="p-0">
 	<div class="container">
+        <div class="row g-4">
     <?php 
 $result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog");
 
 while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
     
 ?>
-    <div class="row g-4">
+    
       <!-- Card item START -->
       <div class="col-sm-6 col-lg-4">
         <div class="card card-overlay-bottom card-img-scale overflow-hidden">
@@ -35,7 +36,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
         </div>
       </div>
       <?php } ?>
-      <!-- Card item END -->
+      </div> <!-- Card item END -->
     </div> <!-- Row END -->
 	</div>
 </section>
