@@ -38,8 +38,9 @@ while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
 			            </div>
 		            </div>
 		          </div>
-                  <?php } ?>
+                  
 			</div>
+            <?php } ?>
 		</div> <!-- Row END -->
 	</div>
 </section>
