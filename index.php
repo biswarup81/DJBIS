@@ -1,4 +1,16 @@
 <?php
+//Define variables
+include_once './inc/variables.php'; 
+$con1 = mysqli_connect($_HOST,$_USER ,$_PASSWD ,$_DBNAME);
+// Check connection
+if (mysqli_connect_errno())
+{
+    echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+?>
+
+
+<?php
 //include_once "./inc/datacon.php";
 include_once './inc/head.php'; ?>
 

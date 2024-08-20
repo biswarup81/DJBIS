@@ -19,17 +19,17 @@ Header START -->
 
 			<!-- Main navbar START -->
 			<div class="collapse navbar-collapse" id="navbarCollapse">
-				<ul class="navbar-nav navbar-nav-scroll ms-auto">
+				<ul class="navbar-nav navbar-nav-scroll mx-auto">
 					
 					<!-- Nav item 1 Demos -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+						<a class="nav-link dropdown-toggle active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
 						<ul class="dropdown-menu" aria-labelledby="homeMenu">
 							<li> <a class="dropdown-item" href="index.html">Home default</a></li>
 							<li> <a class="dropdown-item" href="index-lazy.html">Home lazy load</a></li>
 							<li> <a class="dropdown-item" href="index-2.html">Magazine classic</a></li>
 							<li> <a class="dropdown-item" href="index-3.html">Magazine</a></li>
-							<li> <a class="dropdown-item" href="index-4.html">Home cards</a></li>
+							<li> <a class="dropdown-item active" href="index-4.html">Home cards</a></li>
 							<li> <a class="dropdown-item" href="index-5.html">Blog classic</a></li>
 							<li> <a class="dropdown-item" href="index-6.html">Blog Personal </a></li>
 							<li> <a class="dropdown-item" href="index-7.html">Blog Vintage</a></li>
@@ -254,9 +254,9 @@ Header START -->
 			<!-- Main navbar END -->
 
 			<!-- Nav right START -->
-			<div class="nav ms-sm-3 flex-nowrap align-items-center">
+			<div class="nav ms-3 flex-nowrap align-items-center">
 				<!-- Dark mode options START -->
-				<div class="nav-item dropdown ms-3">
+				<div class="nav-item dropdown">
 					<!-- Switch button -->
 					<button class="modeswitch" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static">
 						<svg class="theme-icon-active"><use href="#"></use></svg>
@@ -291,20 +291,6 @@ Header START -->
 					</ul>
 				</div>
 				<!-- Dark mode options END -->
-				<!-- Nav additional link -->
-				<div class="nav-item dropdown dropdown-toggle-icon-none">
-					<a class="nav-link dropdown-toggle" role="button" href="#" id="navAdditionalLink" data-bs-toggle="dropdown" aria-expanded="false">
-						<i class="bi bi-three-dots fs-4"></i>
-					</a>
-					<ul class="dropdown-menu dropdown-menu-end min-w-auto shadow rounded text-end" aria-labelledby="navAdditionalLink">
-						<li><a class="dropdown-item fw-normal" href="#">About</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Newsletter</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Author</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">#Tags</a></li>
-						<li><a class="dropdown-item fw-normal" href="#">Contact</a></li>
-						<li><a class="dropdown-item fw-normal" href="#"><span class="badge bg-danger me-2 align-middle">2 Job</span>Careers</a></li>
-					</ul>
-				</div>
 				<!-- Nav Button -->
 				<div class="nav-item d-none d-md-block">
 					<a href="#" class="btn btn-sm btn-danger mb-0 mx-2">Subscribe!</a>
