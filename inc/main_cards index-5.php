@@ -9,7 +9,7 @@ Cards START -->
           <!-- Card featured -->
 					<span class="card-featured" title="Featured post"><i class="fas fa-star"></i></span>
           <!-- Card Image -->
-          <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/3by4/01.jpg" alt="">
+          <img src="<?php echo $S3_BUCKET_FOLDER.$row2['image_700X933'] ?>" alt="">
           <!-- Card Image overlay -->
           <div class="card-img-overlay d-flex flex-column p-3 p-md-4"> 
             <div>
