@@ -11,7 +11,7 @@
 					data-dots="false"
 					data-items="1">
 <?php 
-$result = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog");
+$result = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog where flag = 1 and isDeleted = 0 order by ID desc");
 $count = 1;
 
 while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){ 

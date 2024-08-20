@@ -4,7 +4,7 @@ Cards START -->
 	<div class="container">
         <div class="row g-4">
     <?php 
-$result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog");
+$result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog where flag = 1 and isDeleted = 0 order by ID desc");
 
 while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
     
