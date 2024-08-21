@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Blogzine - Blog and Magazine Bootstrap 5 Theme</title>
+	<title>DJ BIS Amsterdam - Expert DJ for Clubs, Weddings, and Corporate Events</title>
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="author" content="djbis.nl">
-	<meta name="description" content="Bootstrap based News, Magazine and Blog Theme">
+	<meta name="keywords" content="Energetic DJ,Exclusive mixes,DJ for weddings,DJ for corporate events,DJ for private parties,DJ entertainment,DJ music,DJ experiences,DJ dance floor,DJ soundscapes">
+	<meta name="author" content="DJ BIS Amsterdam">
+	<meta name="description" content="DJ BIS Amsterdam is your go-to DJ for weddings, parties, and more. With a vast music selection and a talent for keeping the dance floor alive, DJ BIS Amsterdam makes every event special. Reach out now to book premier DJ services for your next event!">
 
 	<!-- Dark mode -->
 	<script>
