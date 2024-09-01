@@ -5,7 +5,7 @@ Header START -->
 	<nav class="navbar navbar-expand-lg">
 		<div class="container">
 			<!-- Logo START -->
-			<a class="navbar-brand" href="index.html">
+			<a class="navbar-brand" href="index.php">
 				<img class="navbar-brand-item light-mode-item" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/logo_website_v2.jpg" alt="logo">			
 				<img class="navbar-brand-item dark-mode-item" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/logo_website_v2.jpg" alt="logo">			
 			</a>
