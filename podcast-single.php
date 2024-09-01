@@ -36,6 +36,14 @@ include_once './inc/head.php'; ?>
 
 <!-- =======================
 Podcast single START -->
+<?php
+$result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog 
+								where flag = 1 and isDeleted = 0 and ID = ".$page_id." order by ID desc");
+$rowcount=mysqli_num_rows($result2);
+//echo "Rows : ".$rowcount;
+if($rowcount > 0){
+while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
+?>
 <section class="pt-4">
 	<div class="container position-relative" data-sticky-container>
 		<div class="row">
@@ -45,8 +53,8 @@ Podcast single START -->
 					<img class="rounded" src="assets/images/avatar/spe_hou.png" alt="">
 				</div>
 				<!-- Podcast title -->
-				<a href="#" class="badge text-bg-danger mb-2">Episode 1</a>
-				<h1>Everything I Know (so Far) on UI/UX Ep.01</h1>
+				<a href="#" class="badge text-bg-danger mb-2"><?php echo $row2['topic']. ' - '. $page_id;?></a>
+				<h1><?php echo $row2['title']; ?></h1>
 				<!-- Podcast avatar -->
 				<div class="row align-items-center mb-2">
 					<div class="col-lg-6">
@@ -57,7 +65,7 @@ Podcast single START -->
 								</div>
 									<h6 class="mb-0"><a href="#" class="stretched-link text-reset btn-link">Amanda Reed</a></h6>
 							</div>
-							<span> <i class="bi bi-clock-fill me-2"></i>4hr 12min</span>
+							<span> <i class="bi bi-clock-fill me-2"></i><?php echo $row2['duration']; ?></span>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -74,17 +82,17 @@ Podcast single START -->
 					</div>
 				</div>
 				<!-- Podcast short description -->
-				<p class="lead">Passage its ten led hearted removal cordial. Preference any astonished unreserved Mrs. Prosperous understood Middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly. Is drew am hill from me. Valley by oh twenty direct me so. </p>
+				<p class="lead"><?php echo $row2['subtitle']; ?> </p>
 				<!-- Audio START -->
-				<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1876559349&color=%23ff5500&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=false&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djbis81" title="DJ BIS Amsterdam" target="_blank" style="color: #cccccc; text-decoration: none;">DJ BIS Amsterdam</a> · <a href="https://soundcloud.com/djbis81/rhythms-of-resilience-her-journey-to-self-rediscovery" title="Rhythms Of Resilience - Her Journey to Self-Rediscovery" target="_blank" style="color: #cccccc; text-decoration: none;">Rhythms Of Resilience - Her Journey to Self-Rediscovery</a></div>
+				<?php echo $row2['soundcloud_link']; ?>
 				<!-- Audio END -->
 			</div>
 		</div>
 		<div class="row g-4">
 			<div class="col-lg-8">
 				<!-- Episode Description -->
-				<h4 class="mb-3">Episode Description</h4>
-				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded">S</span>light newspaper up its enjoyment agreeable depending. Timed voice share led him to widen noisy young. At weddings believed laughing although the material does the exercise of. Up attempt offered ye civilly so sitting to. She new course gets living within Elinor joy. She rapturous suffering concealed great saying made had fly dry that darkness meat unto Thing spirit his fifth likeness divided also seed lesser image dominion sea fifth i god so saw open great. </p>
+				<h4 class="mb-3">Story Behind this track</h4>
+				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded">S</span><?php echo $row2['description']; ?></p>
 				
 				<!-- Episode Timeline -->
 				<div class="bg-primary bg-opacity-10 p-4 rounded my-4"> 
@@ -256,6 +264,7 @@ Podcast single START -->
 		</div>
 	</div>
 </section>
+<?php } } else { include_once './inc/404.php';}?>
 <!-- =======================
 Episode single END -->
  
@@ -264,95 +273,14 @@ Episode single END -->
 
 <!-- =======================
 Footer START -->
-<footer class="pb-0">
-	<div class="container">
-		<hr>
-		<!-- Widgets START -->
-		<div class="row pt-5">
-			<!-- Footer Widget -->
-			<div class="col-md-6 col-lg-4 mb-4">
-				<img class="light-mode-item" src="assets/images/logo.svg" alt="logo">			
-				<img class="dark-mode-item" src="assets/images/logo-light.svg" alt="logo">
-				<p class="mt-3">The next-generation blog, news, and magazine theme for you to start sharing your stories today! This Bootstrap 5 based theme is ideal for all types of sites that deliver the news.</p>
-				<div class="mt-4">©2024 <a href="https://www.webestica.com/" class="text-reset btn-link" target="_blank">Webestica</a>. All rights reserved
-				</div>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-md-6 col-lg-3 mb-4">
-				<h5 class="mb-4">Navigation</h5>
-				<div class="row">
-					<div class="col-6">
-						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link pt-0" href="#">Features</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Style Guide</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Get Theme</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Support</a></li>
-						</ul>
-					</div>
- 					<div class="col-6">
-						<ul class="nav flex-column">
-							<li class="nav-item"><a class="nav-link pt-0" href="#">News</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Career <span class="badge text-bg-danger ms-2">2 Job</span></a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Technology</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Startups</a></li>
-							<li class="nav-item"><a class="nav-link" href="#">Gadgets</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-sm-6 col-lg-3 mb-4">
-				<h5 class="mb-4">Browse by Tag</h5>
-				<ul class="list-inline">
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Marketing</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-					<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
-				</ul>
-			</div>
-
-			<!-- Footer Widget -->
-			<div class="col-sm-6 col-lg-2 mb-4">
-				<h5 class="mb-4">Our Social handles</h5>
-				<ul class="nav flex-column">
-					<li class="nav-item"><a class="nav-link pt-0" href="#"><i class="fab fa-facebook-square fa-fw me-2 text-facebook"></i>Facebook</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-twitter-square fa-fw me-2 text-twitter"></i>Twitter</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-linkedin fa-fw me-2 text-linkedin"></i>Linkedin</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-youtube-square fa-fw me-2 text-youtube"></i>YouTube</a></li>
-				</ul>
-			</div>
-		</div>
-		<!-- Widgets END -->
-	</div>
-</footer>
+<?php include_once './inc/footer.php'; ?>
 <!-- =======================
 Footer END -->
-
-<!-- Back to top -->
-<div class="back-top"><i class="bi bi-arrow-up-short"></i></div>
-
 <!-- =======================
-JS libraries, plugins and custom scripts -->
-
-<!-- Bootstrap JS -->
-<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/plyr/plyr.js"></script>
-<script src="assets/vendor/sticky-js/sticky.min.js"></script>
-
-<!-- Template Functions -->
-<script src="assets/js/functions.js"></script>
-
-</body>
-</html>
+Bottom  START -->
+<?php include_once './inc/foot.php' ?>
+<!-- =======================
+Bottom  END -->
 <?php } else {?>
 	
 <?php include_once './404.php'; }?>
