@@ -81,7 +81,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
 
 	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
-
+	<link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css">
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 

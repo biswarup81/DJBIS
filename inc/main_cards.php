@@ -26,7 +26,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
             <div class="w-100 mt-auto">
               
               <!-- Card title -->
-              <h4 class="text-white"><a href="post-single-5.html" class="btn-link text-reset stretched-link"><?php echo $row2['title'] ?></a></h4>
+              <h4 class="text-white"><a href="podcast-single.php?ID=<?php echo $row2['ID'] ?>" class="btn-link text-reset stretched-link"><?php echo $row2['title'] ?></a></h4>
               <!-- Card info -->
               <ul class="nav nav-divider text-white-force align-items-center small">
                 <li class="nav-item"><?php echo $row2['niceDate'] ?></li>
