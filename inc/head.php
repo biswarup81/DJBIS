@@ -84,5 +84,4 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendor/plyr/plyr.css">
 	<!-- Theme CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
