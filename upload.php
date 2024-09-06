@@ -4,12 +4,11 @@ require 'vendor/autoload.php';
 use Aws\S3\S3Client; 
  
 // Amazon S3 API credentials 
-$region = 'AWS_REGION'; 
+$region = ap-south-1';
 $version = 'latest'; 
-$access_key_id = 'AWS_ACCESS_KEY'; 
-$secret_access_key = 'AWS_SECRET_KEY'; 
-$bucket = 'S3_BUCKET_NAME'; 
- 
+$access_key_id = AKIAU5QQEM2FP2FDSVU7';
+$secret_access_key = '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';
+$bucket = 'djbis/assets/images/blog'; 
  
 $statusMsg = ''; 
 $status = 'danger'; 
