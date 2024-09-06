@@ -1,3 +1,5 @@
+
+<html>
 <?php 
 // Include the AWS SDK autoloader 
 require 'vendor/autoload.php'; 
@@ -74,3 +76,14 @@ if(isset($_POST["submit"])){
     } 
 } 
 ?>
+ <form method="post" action="" enctype="multipart/form-data">
+    <div class="form-group">
+        <label><b>Select File:</b></label>
+        <input type="file" name="userfile" class="form-control" required>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" name="submit" value="Upload">
+    </div>
+</form>
+</html>
+
