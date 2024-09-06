@@ -220,11 +220,11 @@ Main contain END -->
             })
             .then(response => response.text())
             .then(data => {
-                document.getElementById('uploadMessage').innerHTML = '<div class="alert alert-success">Upload successful!</div>';
+                document.getElementById('uploadMessage').innerHTML = '<div class="alert alert-success">'+data+'</div>';
                 // You can handle success response here
             })
             .catch(error => {
-                document.getElementById('uploadMessage').innerHTML = '<div class="alert alert-danger">Error uploading file.</div>';
+                document.getElementById('uploadMessage').innerHTML = '<div class="alert alert-danger">Error uploading file.'+error+'</div>';
                 // You can handle error response here
             });
         });
