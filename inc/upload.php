@@ -56,7 +56,7 @@ function uploadToS3($fileName, $fileTmpName, $s3Client, $bucketName) {
     try {
         $result = $s3Client->putObject([
             'Bucket' => $bucketName,
-            'Key' => basename($fileName),
+            'Key' => 'assets/images/blog/'.basename($fileName),
             'SourceFile' => $fileTmpName,
             'ACL' => 'public-read', // Adjust as necessary
         ]);
