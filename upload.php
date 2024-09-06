@@ -1,6 +1,8 @@
 <?php 
 // Include the AWS SDK autoloader 
-
+require 'vendor/autoload.php'; 
+use Aws\S3\S3Client; 
+ 
 // Amazon S3 API credentials 
 $region = ap-south-1';
 $version = 'latest'; 
