@@ -27,7 +27,7 @@ while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)){
 			            	<!-- Card category -->
 			            	<a href="#" class="badge bg-primary mb-2"><i class="fas fa-circle me-2 small fw-bold"></i><?php echo $row['topic'] ?></a>
 			            	<!-- Card title -->
-			              <h2 class="text-white display-5"><a href="post-single-4.html" class="btn-link text-reset fw-normal"><?php echo $row['title'] ?></a></h2>
+			              <h2 class="text-white display-5"><a href="podcast-single.php?ID=<?php echo $row['ID'] ?>" class="btn-link text-reset fw-normal"><?php echo $row['title'] ?></a></h2>
 			              <p class="text-white"><?php echo $row['subtitle'] ?></p>
 			              <!-- Card info -->
 										<ul class="nav nav-divider text-white-force align-items-center d-none d-sm-inline-block">
