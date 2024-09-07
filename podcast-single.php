@@ -100,28 +100,13 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 						<ul class="list-inline list-unstyled d-inline-block mb-0">
 							<li class="list-inline-item"><a href="#" class="me-3 text-body">Facebook</a></li>
 							<li class="list-inline-item"><a href="#" class="me-3 text-body">Twitter</a></li>
-							<li class="list-inline-item"><a href="#" class="me-3 text-body">Dribble</a></li>
+							<li class="list-inline-item"><a href="#" class="me-3 text-body">LinkedIn</a></li>
 						</ul>
 					</div>
 				</div>
 				<!-- Share social END -->
 
-				<!-- Next episode START -->
-				<div class="mt-5">
-					<div class="bg-primary bg-opacity-10 rounded p-4 d-flex align-items-center position-relative">
-						<!-- Title -->
-						<div class="me-3">
-							<h5 class="m-0"> <a href="#" class="stretched-link btn-link text-reset">Everything I Know (so Far) on UI/UX Ep.02</a></h5>
-						</div>
-						<!-- Icon -->
-						<div class="ms-auto flex-grow-0">
-							<a href="#!" class="icon-md border border-primary d-block text-primary rounded-circle">
-								<i class="bi bi-play-fill fs-3"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-				<!-- Next episode END -->
+				
 			</div>
 			<!-- Hosted START -->
 			<div class="col-lg-4">
