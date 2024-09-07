@@ -127,7 +127,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 			<div class="col-lg-4">
 				<div class="text-center" data-sticky data-margin-top="80" data-sticky-for="991">
 					<div class="avatar avatar-xxxl">
-						<img class="avatar-img rounded-circle" src="assets/images/avatar/02.jpg" alt="avatar">
+						<img class="avatar-img rounded-circle" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/avatar_djbis.jpg" alt="avatar">
 					</div>
 					<!-- Host name -->
 					<div class="mt-3">
