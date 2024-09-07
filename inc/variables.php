@@ -5,7 +5,7 @@ $_USER = "djbis";
 $_PASSWD = "Welcome@123#";
 $_DBNAME = "djbis";
 $S3_BUCKET_FOLDER ="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/";
-
+$S3_BUCKET_IMAGES_FOLDER ="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/";
 // S3 Bucket credentials
 $bucketName = 'djbis';
 $region = 'ap-south-1';
