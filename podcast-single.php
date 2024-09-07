@@ -48,10 +48,6 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 	<div class="container position-relative" data-sticky-container>
 		<div class="row">
 			<div class="col-12">
-				<!-- Podcast image -->
-				<div class="mb-3">
-					<img class="rounded" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/avatar_djbis.jpg" alt="">
-				</div>
 				<!-- Podcast title -->
 				<a href="#" class="badge text-bg-danger mb-2"><?php echo $row2['topic']. ' - '. $page_id;?></a>
 				<h1><?php echo $row2['title']; ?></h1>
