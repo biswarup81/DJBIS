@@ -16,7 +16,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
           <!-- Card featured -->
 					<span class="card-featured" title="Featured post"><i class="fas fa-star"></i></span>
           <!-- Card Image -->
-          <img src="<?php echo $S3_BUCKET_FOLDER.$row2['image_700X933'] ?>" alt="">
+          <img src="<?php echo $S3_BUCKET_FOLDER.$row2['image_700X933'] ?>" alt="<?php echo $row2['title'] ?>">
           <!-- Card Image overlay -->
           <div class="card-img-overlay d-flex flex-column p-3 p-md-4"> 
             <div>
