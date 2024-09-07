@@ -36,8 +36,8 @@ Inner intro START -->
               <!-- breadcrumb -->
               <nav class="d-flex justify-content-center" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">
-                  <li class="breadcrumb-item"><a href="index.html"><i class="bi bi-house me-1"></i> Home</a></li>
-                  <li class="breadcrumb-item active">About us</li>
+                  <li class="breadcrumb-item"><a href="index.php"><i class="bi bi-house me-1"></i> Home</a></li>
+                  <li class="breadcrumb-item active">About DJ BIS</li>
                 </ol>
               </nav>
             </div>

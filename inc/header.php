@@ -39,7 +39,7 @@ Header START -->
 							<li> <a class="dropdown-item" href="index-11.html">Techno Trance</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"> <a class="nav-link" href="about-us.php">About Us</a></li>
+					<li class="nav-item"> <a class="nav-link" href="about-us.php">About DJ BIS</a></li>
 					<li class="nav-item"> <a class="nav-link" href="contact-us.php">Contact Us</a></li>
 					
 					<!-- Nav item 4 Mega menu -->
