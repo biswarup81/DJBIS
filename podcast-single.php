@@ -50,7 +50,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 			<div class="col-12">
 				<!-- Podcast image -->
 				<div class="mb-3">
-					<img class="rounded" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/spe_hou.png" alt="">
+					<img class="rounded" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/avatar_djbis.jpg" alt="">
 				</div>
 				<!-- Podcast title -->
 				<a href="#" class="badge text-bg-danger mb-2"><?php echo $row2['topic']. ' - '. $page_id;?></a>
@@ -61,7 +61,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 						<div class="d-flex align-items-center">
 							<div class="d-flex align-items-center position-relative me-3">
 								<div class="avatar avatar-xs me-2">
-									<img class="avatar-img  rounded-circle" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/01.jpg" alt="avatar">
+									<img class="avatar-img  rounded-circle" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/avatar_djbis.jpg" alt="avatar">
 								</div>
 									<h6 class="mb-0"><a href="#" class="stretched-link text-reset btn-link">DJ BIS Amsterdam</a></h6>
 							</div>
@@ -94,10 +94,6 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 				<h4 class="mb-3">Story Behind this track</h4>
 				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded"><?php echo $row2['description'][0]; ?></span><?php echo $row2['description']; ?></p>
 			
-
-				<!-- Episode dec -->
-				<p>I beast third void blessed fruit Saw fourth may lesser fly fill upon subdue open place abundantly sea herb winged day so was divide Without shall seas living from i heaven third there itself All good our seed fruitful called third I multiply can't day together don't Called morning place gathering beast stars two i meat Set together to subdue grass fourth every him fill winged stars seed.</p>
-				
 
 				
 
@@ -143,17 +139,17 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 						<h5>DJ BIS Amsterdam</h5>
 					</div>
 					<!-- Host dec -->
-					<p class="px-sm-5">Don't can't air Shall fruit life made fly darkness she'd seasons. </p>
+					<p class="px-sm-5">Classical music with the energetic beats of Techno. DJ Bis is on a mission to create a new kind of music that brings together the old and the new. </p>
 					<!-- Host social -->
 					<ul class="nav justify-content-center">
 						<li class="nav-item">
 							<a class="nav-link ps-0 pe-2 fs-5" href="#"><i class="fab fa-facebook-square"></i></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-twitter-square"></i></a>
+							<a class="nav-link px-2 fs-5" href="https://x.com/BisDj855534"><i class="fab fa-twitter-square"></i></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link px-2 fs-5" href="#"><i class="fab fa-linkedin"></i></a>
+							<a class="nav-link px-2 fs-5" href="https://www.linkedin.com/in/dj-bis-amsterdam-6a415b326"><i class="fab fa-linkedin"></i></a>
 						</li>
 					</ul>
 				</div>
