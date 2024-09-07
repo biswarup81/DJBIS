@@ -12,4 +12,6 @@ $region = 'ap-south-1';
 $accessKey = 'AKIAU5QQEM2FP2FDSVU7';
 $secretKey = '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';
 
+$upload_key = 'HkIhgFDytcvYychTt^$)n*(+!(8GtHHvvhjssskbb';
+
 ?>

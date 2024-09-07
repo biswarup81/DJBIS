@@ -1,15 +1,23 @@
 <?php
-//include_once "./inc/datacon.php";
+if(isset($_GET['key'])){
+    $key = $_GET['key'];
+	include_once './inc/variables.php'; 
+	if($key == $upload_key ) {
+	//include_once "./inc/datacon.php";
 include_once './inc/head.php'; ?>
 
 <body>
 <!-- Header START -->
 <?php include_once './inc/header.php'; ?>
 
-<?php include_once './inc/variables.php'; ?>
+<?php 
+
+
+?>
 
 
 <!-- **************** MAIN CONTENT START **************** -->
+
 <main>
 	<style>
 		.table-cell {
@@ -241,3 +249,8 @@ Bottom  START -->
 <?php include_once './inc/foot.php' ?>
 <!-- =======================
 Bottom  END -->
+} else{
+	echo "Sorry you don't have permission to modify this page..";
+}} else {
+	echo "Sorry you don't have permission to modify this page";
+}
