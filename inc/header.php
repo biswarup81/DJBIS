@@ -135,7 +135,7 @@ Header START -->
 					</li>
 
 					<!-- Nav item 5 link-->
-					<li class="nav-item"> <a class="nav-link" href="dashboard.html">Dashboard</a></li>
+					<li class="nav-item"> <a class="nav-link" href="#">Dashboard</a></li>
 				</ul>
 			</div>
 			<!-- Main navbar END -->
