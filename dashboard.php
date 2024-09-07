@@ -1,8 +1,6 @@
 <?php
-if(isset($_GET['key'])){
-    $key = $_GET['key'];
-	include_once './inc/variables.php'; 
-	if($key == $upload_key ) {
+include_once './inc/variables.php'; 
+if( isset($_GET['key']) && ($_GET['key'] == $upload_key) ){
 	//include_once "./inc/datacon.php";
 include_once './inc/head.php'; ?>
 
@@ -251,6 +249,4 @@ Bottom  START -->
 Bottom  END -->
 } else{
 	echo "Sorry you don't have permission to modify this page..";
-}} else {
-	echo "Sorry you don't have permission to modify this page";
 }
