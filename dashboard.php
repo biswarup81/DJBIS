@@ -1,6 +1,16 @@
 <?php
 include_once './inc/variables.php'; 
-if( isset($_GET['key']) && ($_GET['key'] == $upload_key) ){
+$flag = 0;
+if(isset($_GET['key'])){
+    $key = $_GET['key'];
+	//echo "Key is --> ".$key;
+	if($key == $upload_key ) {
+		$flag=1;
+		//echo "Sings are equal. flag is set";
+	}
+} 
+
+if ($flag == 1) {
 	//include_once "./inc/datacon.php";
 include_once './inc/head.php'; ?>
 
@@ -244,9 +254,7 @@ Footer START -->
 
 <!-- =======================
 Bottom  START -->
-<?php include_once './inc/foot.php' ?>
-<!-- =======================
-Bottom  END -->
-} else{
-	echo "Sorry you don't have permission to modify this page..";
-}
+<?php include_once './inc/foot.php' ;
+} else { echo "YOU ARE NOT PERMITTED";} ?>
+
+<!-- ======================= Bottom  END -->
