@@ -74,22 +74,22 @@ About START -->
         <div class="row">
           <!-- Service item-->
           <div class="col-md-6 col-lg-4 mb-4">
-            <img class="rounded" src="assets/images/blog/3by2/04.jpg" alt="Card image">
+            <img class="rounded" src="<?php echo $S3_BUCKET_FOLDER;?>coporate-events.jpg" alt="Card image">
             <h4 class="mt-3">Corporate Events</h4>
             <p>Every event is unique, and we pride ourselves on our ability to customize our services to meet your specific needs and preferences.
             </p>
           </div>
           <!-- Service item-->
           <div class="col-md-6 col-lg-4 mb-4">
-            <img class="rounded" src="assets/images/blog/3by2/01.jpg" alt="Card image">
+            <img class="rounded" src="<?php echo $S3_BUCKET_FOLDER;?>private-party.jpg" alt="Card image">
             <h4 class="mt-3">Private Parties</h4>
             <p>A playlist that reflects your personal taste and the vibe of your party. From chart-topping hits to timeless classics, we ensure the music suits the occasion and keeps everyone dancing.</p>
           </div>
           <!-- Service item-->
           <div class="col-md-6 col-lg-4 mb-4">
-            <img class="rounded" src="assets/images/blog/3by2/03.jpg" alt="Card image">
+            <img class="rounded" src="<?php echo $S3_BUCKET_FOLDER;?>night-clubs.jpg" alt="Card image">
             <h4 class="mt-3">Night Club</h4>
-            <p>Tailored to fit the unique vibe of your nightclub, our sets are designed to build excitement and maintain a pulsating rhythm throughout the night. We strategically structure our playlists to build anticipation and unleash peak moments that get the crowd hyped.</p>
+            <p>Tailored to fit the unique vibe of your nightclub, our sets are designed to build excitement and maintain a pulsating rhythm throughout the night.</p>
           </div>
         </div>
         <!-- Service END -->
