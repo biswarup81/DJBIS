@@ -59,11 +59,11 @@ while($row3 = mysqli_fetch_array($result3,MYSQLI_ASSOC)){
 											<!-- Card img -->
 											<img class="card-img rounded" src="<?php echo $S3_BUCKET_FOLDER.$row3['image_1300X732'] ?>" alt="<?php echo $row3['subtitle'] ?>">
 											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold"><?php echo $row3['subtitle'] ?></a></h6>
+												<h6 class="card-title mb-0"><a href="podcast-single.php?ID=<?php echo $row3['ID'] ?>" class="btn-link text-reset fw-bold"><?php echo $row3['subtitle'] ?></a></h6>
 												<!-- Card info -->
 												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
 													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Joan Wallace</a>
+														<a href="./about-us.php" class="text-reset btn-link">DJ BIS</a>
 													</li>
 													<li class="nav-item"><?php echo $row3['niceDate'] ?></li>
 												</ul>

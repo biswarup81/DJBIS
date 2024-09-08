@@ -133,3 +133,6 @@ Bottom  START -->
 <?php include_once './inc/foot.php' ?>
 <!-- =======================
 Bottom  END -->
+<?php 
+	$con1->close();
+?>

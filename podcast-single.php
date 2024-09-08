@@ -88,7 +88,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 			<div class="col-lg-8">
 				<!-- Episode Description -->
 				<h4 class="mb-3">Story Behind this track</h4>
-				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded"><?php echo $row2['description'][0]; ?></span><?php echo $row2['description']; ?></p>
+				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded"><?php if (strlen($row2['description']) > 0){echo $row2['description'][0]; }?></span><?php echo $row2['description']; ?></p>
 			
 
 				
@@ -159,3 +159,6 @@ Bottom  END -->
 <?php } else {?>
 	
 <?php include_once './404.php'; }?>
+<?php 
+	$con1->close();
+?>
