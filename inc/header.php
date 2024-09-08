@@ -51,8 +51,7 @@ Header START -->
 									<!-- Card item START -->
 									<?php 
 $result3 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog where flag = 1 and isDeleted = 0 and isSpecial = 1 order by ID desc");
--
-while($row3 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
+while($row3 = mysqli_fetch_array($result3,MYSQLI_ASSOC)){ 
     
 ?>
 									<div class="col-sm-6 col-lg-3">
