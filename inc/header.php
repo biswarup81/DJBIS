@@ -44,71 +44,44 @@ Header START -->
 					
 					<!-- Nav item 4 Mega menu -->
 					<li class="nav-item dropdown dropdown-fullwidth">
-						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Lifestyle</a>
+						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> DJ BIS Blogs</a>
 						<div class="dropdown-menu" aria-labelledby="megaMenu">
 							<div class="container">
 								<div class="row g-4 p-3 flex-fill">
 									<!-- Card item START -->
+									<?php 
+$result3 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog where flag = 1 and isDeleted = 0 and isSpecial = 1 order by ID desc");
+-
+while($row3 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
+    
+?>
 									<div class="col-sm-6 col-lg-3">
 										<div class="card bg-transparent">
 											<!-- Card img -->
-											<img class="card-img rounded" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/16by9/small/01.jpg" alt="Card image">
+											<img class="card-img rounded" src="<?php echo $S3_BUCKET_FOLDER.$row3['image_1300X732'] ?>" alt="<?php echo $row3['subtitle'] ?>">
 											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">7 common mistakes everyone makes while traveling</a></h6>
+												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold"><?php echo $row3['subtitle'] ?></a></h6>
 												<!-- Card info -->
 												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
 													<li class="nav-item">
 														<a href="#" class="text-reset btn-link">Joan Wallace</a>
 													</li>
-													<li class="nav-item">Feb 18, 2022</li>
+													<li class="nav-item"><?php echo $row3['niceDate'] ?></li>
 												</ul>
 											</div>
 										</div>
 									</div>
+<?php } ?>
 									<!-- Card item END -->
-									<!-- Card item START -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card bg-transparent">
-											<!-- Card img -->
-											<img class="card-img rounded" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/16by9/small/02.jpg" alt="Card image">
-											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">12 worst types of business accounts you follow on Twitter</a></h6>
-												<!-- Card info -->
-												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
-													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Lori Stevens</a>
-													</li>
-													<li class="nav-item">Jun 03, 2022</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- Card item END -->
-									<!-- Card item START -->
-									<div class="col-sm-6 col-lg-3">
-										<div class="card bg-transparent">
-											<!-- Card img -->
-											<img class="card-img rounded" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/16by9/small/03.jpg" alt="Card image">
-											<div class="card-body px-0 pt-3">
-												<h6 class="card-title mb-0"><a href="#" class="btn-link text-reset fw-bold">Skills that you can learn from business</a></h6>
-												<!-- Card info -->
-												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
-													<li class="nav-item">
-														<a href="#" class="text-reset btn-link">Judy Nguyen</a>
-													</li>
-													<li class="nav-item">Sep 07, 2022</li>
-												</ul>
-											</div>
-										</div>
-									</div>
-									<!-- Card item END -->
+									
+									
 									<!-- Card item START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="bg-primary bg-opacity-10 p-4 text-center h-100 w-100 rounded">
-											<span>The Blogzine</span>
+											<span>DJ BIS Amsterdam</span>
 											<h3>Premium Membership</h3>
-											<p>Become a Member Today!</p>
-											<a href="#" class="btn btn-warning">View pricing plans</a>
+											<p>0682326496</p>
+											<a href="#" class="btn btn-warning">Book now !!</a>
 										</div>
 									</div>
 									<!-- Card item END -->
@@ -118,15 +91,15 @@ Header START -->
 									<div class="col-12">
 										<ul class="list-inline mt-3">
 											<li class="list-inline-item">Trending tags:</li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Travel</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">Business</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Tech</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Gadgets</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Lifestyle</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Vaccine</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Sports</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Covid-19</a></li>
-											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Politics</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Techno</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-warning-soft">House</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Classics</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Tech House</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Bollywood Mix</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-primary-soft">Country</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-success-soft">Dance</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-danger-soft">Electronic</a></li>
+											<li class="list-inline-item"><a href="#" class="btn btn-sm btn-info-soft">Trance</a></li>
 										</ul>
 									</div>
 								</div> <!-- Row END -->

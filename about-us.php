@@ -64,9 +64,9 @@ About START -->
         <h3 class="mt-4">DJ Services curated to your taste</h3>
         <ul>
           <li><b>Weddings: </b>Personalized playlists for your special day.</li>
-          <li><b>Corporate Events: </b>Professional DJ services to set the perfect tone.</li>
-          <li><b>Private Parties: </b>Make any celebration a hit.</li>
-          <li><b>Club Nights: </b>Expert mixing to keep the vibe electric.</li>
+          <li><b>Corporate Events: </b>DJ BIS combines professionalism, experience, and a client-centric approach to deliver exceptional DJ services for corporate events. Our commitment to punctuality, reliability, and a polished presentation ensures a seamless and memorable experience. With years of expertise in catering to diverse corporate functions, we customize our offerings to meet your specific needs and preferences. From tailored playlists and state-of-the-art sound and lighting to emcee services and interactive entertainment, we work closely with you to bring your vision to life and make your event a resounding success.</li>
+          <li><b>Private Parties: </b>When it comes to private parties, [DJ Name] is your go-to source for turning any gathering into an unforgettable celebration. Whether you're planning a birthday bash, anniversary celebration, graduation party, or any other special occasion, our DJ services are designed to elevate the atmosphere and keep your guests entertained from start to finish.</li>
+          <li><b>Club Nights: </b>specialize in creating electrifying nightclub experiences that keep the dance floor packed and the energy levels soaring. With a deep understanding of club culture and a talent for reading the crowd, we bring dynamic and unforgettable performances that resonate with partygoers and club owners alike. Whether it's a high-profile venue, an exclusive members-only club, or a trendy nightlife hotspot, our DJ services are designed to elevate your club nights to new heights.</li>
         </ul>
         
         <!-- Service START -->
@@ -76,19 +76,20 @@ About START -->
           <div class="col-md-6 col-lg-4 mb-4">
             <img class="rounded" src="assets/images/blog/3by2/04.jpg" alt="Card image">
             <h4 class="mt-3">Corporate Events</h4>
-            <p>Perceived end knowledge certainly day sweetness why cordially. Ask a quick six seven offer see among.</p>
+            <p>Every event is unique, and we pride ourselves on our ability to customize our services to meet your specific needs and preferences.
+            </p>
           </div>
           <!-- Service item-->
           <div class="col-md-6 col-lg-4 mb-4">
             <img class="rounded" src="assets/images/blog/3by2/01.jpg" alt="Card image">
             <h4 class="mt-3">Private Parties</h4>
-            <p>Speedily say has suitable disposal add boy. On forth doubt miles of child. Exercise joy man children rejoiced.</p>
+            <p>A playlist that reflects your personal taste and the vibe of your party. From chart-topping hits to timeless classics, we ensure the music suits the occasion and keeps everyone dancing.</p>
           </div>
           <!-- Service item-->
           <div class="col-md-6 col-lg-4 mb-4">
             <img class="rounded" src="assets/images/blog/3by2/03.jpg" alt="Card image">
             <h4 class="mt-3">Night Club</h4>
-            <p> Yet uncommonly his ten who diminution astonished. Demesne new manners savings staying had. </p>
+            <p>Tailored to fit the unique vibe of your nightclub, our sets are designed to build excitement and maintain a pulsating rhythm throughout the night. We strategically structure our playlists to build anticipation and unleash peak moments that get the crowd hyped.</p>
           </div>
         </div>
         <!-- Service END -->
