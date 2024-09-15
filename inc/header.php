@@ -23,7 +23,7 @@ Header START -->
 					
 					<!-- Nav item 1 Demos -->
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DJ BIS Special</a>
+						<a class="nav-link dropdown-toggle active" href="#" id="homeMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Special Mixes</a>
 						<ul class="dropdown-menu" aria-labelledby="homeMenu">
 							<li> <a class="dropdown-item" href="index.html">Techno</a></li>
 							<li> <a class="dropdown-item" href="index-lazy.html">House</a></li>
@@ -39,8 +39,8 @@ Header START -->
 							<li> <a class="dropdown-item" href="index-11.html">Techno Trance</a></li>
 						</ul>
 					</li>
-					<li class="nav-item"> <a class="nav-link" href="about-us.php">About DJ BIS</a></li>
-					<li class="nav-item"> <a class="nav-link" href="contact-us.php">Contact Us</a></li>
+					<li class="nav-item"> <a class="nav-link" href="about-us.php">About me</a></li>
+					<li class="nav-item"> <a class="nav-link" href="contact-us.php">Contact</a></li>
 					
 					<!-- Nav item 4 Mega menu -->
 					<li class="nav-item dropdown dropdown-fullwidth">
@@ -63,7 +63,7 @@ while($row3 = mysqli_fetch_array($result3,MYSQLI_ASSOC)){
 												<!-- Card info -->
 												<ul class="nav nav-divider align-items-center text-uppercase small mt-2">
 													<li class="nav-item">
-														<a href="./about-us.php" class="text-reset btn-link">DJ BIS</a>
+														<a href="./about-us.php" class="text-reset btn-link">DJ BISWARUP</a>
 													</li>
 													<li class="nav-item"><?php echo $row3['niceDate'] ?></li>
 												</ul>
@@ -77,7 +77,7 @@ while($row3 = mysqli_fetch_array($result3,MYSQLI_ASSOC)){
 									<!-- Card item START -->
 									<div class="col-sm-6 col-lg-3">
 										<div class="bg-primary bg-opacity-10 p-4 text-center h-100 w-100 rounded">
-											<span>DJ BIS Amsterdam</span>
+											<span>DJ BISWARUP</span>
 											<h3>Premium Membership</h3>
 											<p>0682326496</p>
 											<a href="#" class="btn btn-warning">Book now !!</a>

@@ -32,7 +32,7 @@ Inner intro START -->
           <!-- Card Image overlay -->
           <div class="card-img-overlay d-flex align-items-center p-3 p-sm-4"> 
             <div class="w-100 my-auto">
-              <h1 class="text-white display-4">About DJ BIS</h1>
+              <h1 class="text-white display-4">About DJ BISWARUP</h1>
               <!-- breadcrumb -->
               <nav class="d-flex justify-content-center" aria-label="breadcrumb">
                 <ol class="breadcrumb breadcrumb-dark breadcrumb-dots mb-0">

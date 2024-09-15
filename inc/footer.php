@@ -45,7 +45,7 @@ Footer START -->
 			<!-- Footer Widget -->
 			<div class="col-md-12 col-lg-6 mb-4">
 			<p class="mt-3">
-				Welcome to DJBIS Amsterdam ! With a passion for music and a talent for creating unforgettable experiences, DJBIS offers top-tier DJ services for events of all sizes. From weddings and corporate events to nightclubs and private parties, we bring the beats that keep the energy high and the dance floors packed.
+				Meet DJ BISWARUP ! With a passion for music and a talent for creating unforgettable experiences, DJ BISWARUP offers top-tier DJ services for events of all sizes. From weddings and corporate events to nightclubs and private parties, we bring the beats that keep the energy high and the dance floors packed.
 				</p>
 			<p> Contact Us Ready to book? Contact us today for availability and a quote. Let's create unforgettable memories together!</p>
 			</div>
