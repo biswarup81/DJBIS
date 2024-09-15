@@ -44,7 +44,7 @@ Header START -->
 					
 					<!-- Nav item 4 Mega menu -->
 					<li class="nav-item dropdown dropdown-fullwidth">
-						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> DJ BIS Blogs</a>
+						<a class="nav-link dropdown-toggle" href="#" id="megaMenu" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blogs</a>
 						<div class="dropdown-menu" aria-labelledby="megaMenu">
 							<div class="container">
 								<div class="row g-4 p-3 flex-fill">
