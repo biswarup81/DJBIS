@@ -9,7 +9,6 @@ if (mysqli_connect_errno())
 }
 ?>
 
-
 <?php
 //include_once "./inc/datacon.php";
 include_once './inc/head.php'; ?>
