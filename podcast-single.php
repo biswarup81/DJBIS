@@ -18,11 +18,28 @@ if (mysqli_connect_errno())
     echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 ?>
-
+<!DOCTYPE html>
+<html lang="en">
+<?php
+$result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog 
+								where flag = 1 and isDeleted = 0 and ID = ".$page_id." order by ID desc");
+$rowcount=mysqli_num_rows($result2);
+//echo "Rows : ".$rowcount;
+if($rowcount > 0){
+	while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
+		$topic = $row2['topic'];
+		$duration = $row2['duration'];
+		$subtitle = $row2['subtitle'];
+		$soundcloud_link = $row2['soundcloud_link'];
+		$description = $row2['description']
+	}
+?>
+<head>
+	<title>DJ BISWARUP - <?php echo $subtitle; ?></title>
 
 <?php
 //include_once "./inc/datacon.php";
-include_once './inc/head.php'; ?>
+include_once './inc/head2.php'; ?>
 
 <body>
 
@@ -36,20 +53,13 @@ include_once './inc/head.php'; ?>
 
 <!-- =======================
 Podcast single START -->
-<?php
-$result2 = mysqli_query($con1,"select *,DATE_FORMAT(CREATE_DATE,'%b %d, %Y') as niceDate from blog 
-								where flag = 1 and isDeleted = 0 and ID = ".$page_id." order by ID desc");
-$rowcount=mysqli_num_rows($result2);
-//echo "Rows : ".$rowcount;
-if($rowcount > 0){
-while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
-?>
+
 <section class="pt-4">
 	<div class="container position-relative" data-sticky-container>
 		<div class="row">
 			<div class="col-12">
 				<!-- Podcast title -->
-				<a href="#" class="badge text-bg-danger mb-2"><?php echo $row2['topic']. ' - '. $page_id;?></a>
+				<a href="#" class="badge text-bg-danger mb-2"><?php echo $topic. ' - '. $page_id;?></a>
 				<h1><?php echo $row2['title']; ?></h1>
 				<!-- Podcast avatar -->
 				<div class="row align-items-center mb-2">
@@ -59,9 +69,9 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 								<div class="avatar avatar-xs me-2">
 									<img class="avatar-img  rounded-circle" src="<?php echo $S3_BUCKET_IMAGES_FOLDER; ?>avatar/avatar_djbis.jpg" alt="avatar">
 								</div>
-									<h6 class="mb-0"><a href="#" class="stretched-link text-reset btn-link">DJ BIS Amsterdam</a></h6>
+									<h6 class="mb-0"><a href="#" class="stretched-link text-reset btn-link">DJ Biswarup</a></h6>
 							</div>
-							<span> <i class="bi bi-clock-fill me-2"></i><?php echo $row2['duration']; ?></span>
+							<span> <i class="bi bi-clock-fill me-2"></i><?php echo $duration; ?></span>
 						</div>
 					</div>
 					<div class="col-lg-6">
@@ -78,9 +88,9 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 					</div>
 				</div>
 				<!-- Podcast short description -->
-				<p class="lead"><?php echo $row2['subtitle']; ?> </p>
+				<p class="lead"><?php echo $subtitle; ?> </p>
 				<!-- Audio START -->
-				<?php echo $row2['soundcloud_link']; ?>
+				<?php echo $soundcloud_link; ?>
 				<!-- Audio END -->
 			</div>
 		</div>
@@ -88,7 +98,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 			<div class="col-lg-8">
 				<!-- Episode Description -->
 				<h4 class="mb-3">Story Behind this track</h4>
-				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded"><?php if (strlen($row2['description']) > 0){echo $row2['description'][0]; }?></span><?php echo $row2['description']; ?></p>
+				<p><span class="dropcap bg-success bg-opacity-10 text-success px-2 rounded"><?php if (strlen($description) > 0){echo $description[0]; }?></span><?php echo $description; ?></p>
 			
 
 				
@@ -117,10 +127,10 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 					<!-- Host name -->
 					<div class="mt-3">
 						<span>Hosted by </span>
-						<h5>DJ BIS Amsterdam</h5>
+						<h5>DJ Biswarup</h5>
 					</div>
 					<!-- Host dec -->
-					<p class="px-sm-5">Classical music with the energetic beats of Techno. DJ Bis is on a mission to create a new kind of music that brings together the old and the new. </p>
+					<p class="px-sm-5">Classical music with the energetic beats of Techno. DJ Biswarup is on a mission to create a new kind of music that brings together the old and the new. </p>
 					<!-- Host social -->
 					<ul class="nav justify-content-center">
 						<li class="nav-item">
@@ -139,7 +149,7 @@ while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){
 		</div>
 	</div>
 </section>
-<?php } } else { include_once './inc/404.php';}?>
+<?php  } else { include_once './inc/404.php';}?>
 <!-- =======================
 Episode single END -->
  
