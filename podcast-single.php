@@ -1,4 +1,6 @@
 <?php
+include_once './inc/variables.php'; 
+$con1 = mysqli_connect($_HOST,$_USER ,$_PASSWD ,$_DBNAME);
 if(isset($_GET['ID'])){
     $page_id = $_GET['ID'];
 } else {
@@ -10,8 +12,7 @@ if(isset($_GET['ID'])){
 <?php
 if ( $page_id > 0) {
 //Define variables
-include_once './inc/variables.php'; 
-$con1 = mysqli_connect($_HOST,$_USER ,$_PASSWD ,$_DBNAME);
+
 // Check connection
 if (mysqli_connect_errno())
 {
@@ -29,9 +30,10 @@ if($rowcount > 0){
 	while($row2 = mysqli_fetch_array($result2,MYSQLI_ASSOC)){ 
 		$topic = $row2['topic'];
 		$duration = $row2['duration'];
+		$title = $row2['title'];
 		$subtitle = $row2['subtitle'];
 		$soundcloud_link = $row2['soundcloud_link'];
-		$description = $row2['description']
+		$description = $row2['description'];
 	}
 ?>
 <head>
@@ -60,7 +62,7 @@ Podcast single START -->
 			<div class="col-12">
 				<!-- Podcast title -->
 				<a href="#" class="badge text-bg-danger mb-2"><?php echo $topic. ' - '. $page_id;?></a>
-				<h1><?php echo $row2['title']; ?></h1>
+				<h1><?php echo $title ; ?></h1>
 				<!-- Podcast avatar -->
 				<div class="row align-items-center mb-2">
 					<div class="col-lg-6">
