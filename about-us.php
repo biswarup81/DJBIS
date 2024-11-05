@@ -56,7 +56,8 @@ About START -->
 	<div class="container">
 		<div class="row">
       <div class="col-xl-9 mx-auto">
-        <h2>Story of a Classical Flute player turned to a Techno DJ</h2>
+        <h1>DJ BISWARUP</h1>
+        <h2>A DJ with Indian Classical Flute</h2>
         <p class="lead">
 		From weddings and corporate events to nightclubs and private parties, I promise to give you an unforgettable musical experiences.
 	        </p>

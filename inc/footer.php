@@ -38,7 +38,7 @@ Footer START -->
 				<img class="light-mode-item" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/logo_website_v2.jpg" alt="logo">			
 				<img class="dark-mode-item" src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/blog/logo_website_v2.jpg" alt="logo">
 				
-				<div class="mt-4">©2024 <a href="#" class="text-reset btn-link" target="_blank">Orange Digital Consultancy</a>. All rights reserved
+				<div class="mt-4">©2024 <a href="#" class="text-reset btn-link" target="_blank">DJ BISWARUP</a>. All rights reserved
 				</div>
 			</div>
 
