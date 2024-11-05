@@ -23,7 +23,7 @@ Footer START -->
 							<li class="ms-2"><a href="https://soundcloud.com/djbis81"> <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/icon/spotify.svg" alt="">Spotify</a></li>
 							<li class="ms-2"><a href="#"> <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/icon/google-podcasts.svg" alt=""> Google Podcast</a></li>
 							<li class="ms-2"><a href="#"> <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/icon/pocket.svg" alt=""> Pocket</a></li>
-							<li class="ms-2"><a href="#"> <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/icon/sound-cloud.svg" alt=""> Sound Cloud</a></li>
+							<li class="ms-2"><a href="ttps://soundcloud.com/djbis81"> <img src="https://djbis.s3.ap-south-1.amazonaws.com/assets/images/icon/sound-cloud.svg" alt=""> Sound Cloud</a></li>
 							
 						</ul>
 					</div>
